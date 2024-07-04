@@ -17,17 +17,17 @@
 					<h3 style="color: #ffcc00; font-weight: bold;">Lottery Results</h3>
 				</div>
 				<div class="row mb-3">
-	<div class="col-md-6 col-12 mb-2">
-		<input type="text" id="searchInput" class="form-control" placeholder="Search...">
-	</div>
-	<div class="col-md-3 col-12 mb-2">
-		<input type="text" id="dateRange" class="form-control" placeholder="Select date range">
-	</div>
-	<div class="col-md-3 col-12" style="display: flex; gap: 10px; justify-content: space-between;">
-		<button class="btn btn-primary me-2" onclick="printTable()" style="width: 100px; height: 30px;">Print</button>
-		<button class="btn btn-secondary" onclick="downloadTable()" style="width: 100px; height: 30px;">Download</button>
-	</div>
-</div>
+					<div class="col-md-6 col-12 mb-2">
+						<input type="text" id="searchInput" class="form-control" placeholder="Search...">
+					</div>
+					<div class="col-md-3 col-12 mb-2">
+						<input type="text" id="dateRange" class="form-control" placeholder="Select date range">
+					</div>
+					<div class="col-md-3 col-12" style="display: flex; gap: 10px; justify-content: space-between;">
+						<button class="btn btn-primary me-2" onclick="printTable()" style="width: 100px; height: 30px;">Print</button>
+						<button class="btn btn-secondary" onclick="downloadTable()" style="width: 100px; height: 30px;">Download</button>
+					</div>
+				</div>
 
 				<div style="position: relative; padding-top: 20px;">
 					<table class="table" style="position: relative; z-index: 1; color: #ffffff; font-family: 'YourFontFamily'; font-weight: normal; border-collapse: collapse;">
