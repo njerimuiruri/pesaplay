@@ -26,6 +26,8 @@
     <!-- Theme Style -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/flatpickr.min.css" rel="stylesheet">
+
 
 	<!-- <style>
     #nav-part .navbar-nav .nav-link {

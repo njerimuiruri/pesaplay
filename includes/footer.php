@@ -112,10 +112,8 @@
 	<!-- custom -->
 	<script src="js/custom.js"></script>
 	<script src="js/menu.js"></script>
-	<!-- <script src="js/flatpickr.js"></script> -->
-
-
-
+	<script src="js/flatpickr.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
 	<!-- <script>
         // Add any necessary JavaScript for mobile menu toggling
         $(document).ready(function() {
@@ -124,8 +122,6 @@
             });
         });
     </script> -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
 	// Dummy data with more varied entries
 	const lotteryData = [{
@@ -224,10 +220,10 @@
                         <td>${draw.dateTime}</td>
                         <td>${draw.winningNumbers}</td>
 						<td>
-    <button class="btn btn-sm btn-info" onclick="showWinners('${draw.drawId}')" style="width: 120px; height: 25px;">
-        View Winners (${draw.winners.length})
-    </button>
-</td>
+                            <button class="btn btn-sm btn-info" onclick="showWinners('${draw.drawId}')" style="width: 120px; height: 25px;">
+                                View Winners (${draw.winners.length})
+                            </button>
+                        </td>
                     </tr>
                 `;
 			tableBody.innerHTML += row;
@@ -283,7 +279,7 @@
 			if (selectedDates.length === 2) {
 				const [start, end] = selectedDates;
 				const filteredData = lotteryData.filter(draw => {
-					const drawDate = new Date(draw.dateTime);
+					const drawDate = new Date(draw.dateTime.split(' ')[0]);
 					return drawDate >= start && drawDate <= end;
 				});
 				populateTable(filteredData);
